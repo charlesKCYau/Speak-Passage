@@ -134,6 +134,7 @@ cancel.addEventListener('click', e => synth.cancel());
 
 textInput.addEventListener('change', e => {
   segment = textInput.value.split(/[.:?]/);
+  cnter = 0;
 });
 
 back1.addEventListener('click', e => {
@@ -160,7 +161,7 @@ back1.addEventListener('click', e => {
 });
 
 run1.addEventListener('click', e => {
-    console.log(segment[cnter]);
+    // console.log(segment[cnter]);
     if (cnter >= 0) {
     // if (segment.length >= 0)
       let speakText = new SpeechSynthesisUtterance(segment[cnter]);
